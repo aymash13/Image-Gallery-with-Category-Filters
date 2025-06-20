@@ -1,9 +1,9 @@
-# Image-Gallery-with-Category-Filters
+**# Image-Gallery-with-Category-Filters
 An interactive and dynamic image gallery web app built with HTML, CSS, and JavaScript, where users can upload images, assign custom labels, and filter the gallery by categories.
 
 💡 How It Works
     Upload any image from your local device.
-    Enter a label (e.g., nature, animals, cities).
+    Enter a label.
     The image will be added to the gallery with the given category.
     Click filter buttons to show only specific categories.
     “All” shows every uploaded image.
@@ -18,4 +18,4 @@ An interactive and dynamic image gallery web app built with HTML, CSS, and JavaS
 🛠️ Technologies Used
     HTML5
     CSS3
-    JavaScript (Vanilla)
+    JavaScript
