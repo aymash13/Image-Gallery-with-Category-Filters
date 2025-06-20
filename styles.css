@@ -1,0 +1,124 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 30px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.upload-form {
+  background: #fff;
+  padding: 25px 30px;
+  max-width: 500px;
+  margin: 30px auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-form input[type="file"],
+.upload-form input[type="text"] {
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.upload-form input[type="text"] {
+  flex: 1 1 100%;
+}
+
+.upload-form button {
+  padding: 12px 20px;
+  background-color: #27ae60;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.upload-form button:hover {
+  background-color: #219150;
+}
+
+.filter-btn {
+  padding: 10px 15px;
+  margin: 5px 5px 15px;
+  background: #3498db;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.filter-btn:hover {
+  background-color: #2980b9;
+}
+
+.filter-btn.active {
+  background: #2c3e50;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  padding: 20px;
+}
+
+.gallery-item {
+  width: 220px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .upload-form {
+    padding: 20px;
+  }
+
+  .gallery-item {
+    width: 90%;
+    height: auto;
+  }
+
+  .upload-form input,
+  .upload-form button {
+    font-size: 14px;
+  }
+}

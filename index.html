@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Uploadable Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Image Gallery with Upload and Filters</h1>
+
+  <div class="upload-form">
+    <input type="file" id="imageInput" accept="image/*">
+    <input type="text" id="labelInput" placeholder="Enter label (e.g. nature)">
+    <button id="uploadBtn">Upload Image</button>
+  </div>
+
+  <div class="buttons" id="filterButtons">
+    <button class="filter-btn active" data-category="all">All</button>
+  </div>
+
+  <div class="gallery" id="gallery"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
